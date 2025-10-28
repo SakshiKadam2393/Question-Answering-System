@@ -35,3 +35,4 @@ This is a web-based Question Answering System that allows users to input a passa
 - The model predicts the most likely answer from the passage.
 
 - The answer is displayed dynamically on the webpage.
+<img width="1508" height="945" alt="image" src="https://github.com/user-attachments/assets/99499f91-6ce5-4df6-be9c-ebf851e69b60" />
