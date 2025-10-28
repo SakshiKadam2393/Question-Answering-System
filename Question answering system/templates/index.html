@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Question Answering Demo</title>
+
+  <!-- ✅ Correct CSS path -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <main class="card">
+    <h1>Question Answering Demo</h1>
+
+    <label>Context (passage)</label>
+    <textarea id="context" rows="8" placeholder="Paste a paragraph or passage here..."></textarea>
+
+    <label>Question</label>
+    <input id="question" type="text" placeholder="Enter a question about the passage" />
+
+    <button id="askBtn">Ask</button>
+
+    <section class="result">
+      <h2>Predicted Answer</h2>
+      <div id="answer">—</div>
+    </section>
+
+    <div id="status" class="status">Ready</div>
+  </main>
+
+  <!-- ✅ Only one JS include (served correctly via Flask) -->
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
